@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+
+html {
+    /* font-size: 62.5%; */
+    /* mac dinh font-size html là 16px
+    đổi sang đơn vị mình chọn là 10px là rem (1 rem = 1opx) */
+}
+
+
+body {
+    position: relative;
+    margin: 0;
+    height: 800px;
+    background-color: hsl(30, 38%, 92%)
+}
+
+.product-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden; 
+    /* overflow: hidden; xóa nội dung bị tràn ra ngoài thẻ cha  */
+}
+
+.product-card__warp {
+    display: inline-block; 
+    width: 300px;
+    vertical-align: top;
+    font-size: 14px;
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+}    
+
+.product-card__destop-img {
+    width: 300px; 
+}
+
+.warp__tag {
+display: block;
+font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+}
+
+.warp__buy-button {
+    color: hsl(158, 36%, 37%);
+    border-radius: 10px;    
+}
+
+.warp__desc {
+    font-size: 14px;
+}
+
+.warp__title{
+    font-family: 'Fraunces', serif;
+}
+.warp__desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+    line-height: 20px;
+}
+.price__current {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:   hsl(158, 36%, 37%);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 18px;
+}
+.price__old {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+    vertical-align: middle;
+    margin-left: 16px;
+}
+.warp__buy-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    height: 50px;
+    width: 100%;
+}
+.buy-button__icon {
+    color:hsl(0, 0%, 100%);
+    vertical-align: middle;
+    margin: 8px;
+}
+.warp__tag {
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);;
+}
