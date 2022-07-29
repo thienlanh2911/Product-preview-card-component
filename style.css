@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     /* font-size: 62.5%; */
     /* mac dinh font-size html là 16px
@@ -26,6 +32,14 @@ body {
     overflow: hidden; 
     /* overflow: hidden; xóa nội dung bị tràn ra ngoài thẻ cha  */
 }
+.product-card__destop-img {
+    width: 300px; 
+    
+}
+
+.product-card__mobile-img {
+    display: none;
+}
 
 .product-card__warp {
     display: inline-block; 
@@ -35,37 +49,40 @@ body {
     padding: 32px;
     box-sizing: border-box;
     background-color: hsl(0, 0%, 100%);
+    height: 100%;
 }    
 
-.product-card__destop-img {
-    width: 300px; 
-}
-
 .warp__tag {
-display: block;
-font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color:hsl(228, 12%, 48%);
-}
-
-.warp__buy-button {
-    color: hsl(158, 36%, 37%);
-    border-radius: 10px;    
-}
-
-.warp__desc {
-    font-size: 14px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
 }
 
 .warp__title{
     font-family: 'Fraunces', serif;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
 }
+
 .warp__desc {
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color:hsl(228, 12%, 48%);
-    line-height: 20px;
+    line-height: 22px;
+    margin-top: 25px;
 }
+
+.warp__price {
+    margin-top: 40px;
+}
+
+
 .price__current {
     font-family: 'Fraunces', sans-serif;
     font-weight: 700;
@@ -73,30 +90,31 @@ font-family: 'Montserrat', sans-serif;
     color:   hsl(158, 36%, 37%);
     display: inline-block;
     vertical-align: middle;
-    margin-top: 18px;
 }
 .price__old {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color:hsl(228, 12%, 48%);
     vertical-align: middle;
-    margin-left: 16px;
+    margin-left: 28px;
+    display: inline-block;
 }
+
 .warp__buy-button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color:hsl(0, 0%, 100%);
     background-color: hsl(158, 36%, 37%);
     border: none;
-    height: 50px;
+    height: 48px;
     width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;    
+    margin-top: 24px;
 }
 .buy-button__icon {
     color:hsl(0, 0%, 100%);
     vertical-align: middle;
     margin: 8px;
 }
-.warp__tag {
-    letter-spacing: 5px;
-    color: hsl(228, 12%, 48%);;
-}
+
